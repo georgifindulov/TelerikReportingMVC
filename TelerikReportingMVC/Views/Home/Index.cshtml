@@ -1,0 +1,21 @@
+﻿@using TelerikReportingMVC.ViewModels
+@model IndexViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<input type="hidden" id="numberOfReportItemsToTake" value="@Model.NumberOfReportItemsToTake" />
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Telerik Reporting</h1>
+    <hr />
+</div>
+
+<div id="reportViewer">
+    loading...
+</div>
+
+@section Scripts {
+    <script src="~/js/index.js"></script>
+}
